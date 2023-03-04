@@ -125,13 +125,92 @@ img {
 }
 
 /************************************************
-    SOLUZIONE RESPONSIVE
- ************************************************/
+SOLUZIONE RESPONSIVE max-w: 780px
+************************************************/
 
 @media screen and (max-width: 768px) {
 
     .container {
     max-width: 100%;
     }
-    
+
 }
+
+/************************************************
+SOLUZIONE RESPONSIVE max-w: 480px
+************************************************/
+
+@media screen and (max-width: 480px) {
+
+/*********START SECTION LESSONS********/
+
+.row {
+    flex-wrap: wrap;
+}
+
+.lessons .col {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lessons .col:first-child {
+    margin-bottom: 75px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/*********END SECTION LESSONS********/
+
+/*********START SECTION STEPS********/
+
+.steps {
+    margin-bottom: 0;
+}
+
+.steps .col {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.steps .col:not(:last-of-type) {
+    margin-bottom: 75px;
+}
+
+/*********END SECTION STEPS********/
+
+/*********START SECTION WHY US********/
+
+section.why-us {
+    background-color: rgb(34, 34, 34);
+    margin-bottom: 0;
+}
+
+.why-us h2 {
+    font-size: 2.5rem;
+    padding-top: 75px;
+
+}
+.why-us h3 {
+    font-size: 2rem;
+}
+
+.why-us .col-left {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.why-us .col-right {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+section .col-left img {
+    margin-bottom: 75px;
+}
+
+}
+
+/*********END SECTION WHY US********/
